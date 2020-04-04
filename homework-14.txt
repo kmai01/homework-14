@@ -1,0 +1,11 @@
+﻿Homework -14 
+
+
+
+
+Config>config.json - save mysql database connection for different databases.
+Config>passport.js - require: passport, passport-local, 
+                                Link models through var db.
+                                Log-in using email, check for existing email, check for valid password.
+Models>index.js - 
+Models>user.js -
