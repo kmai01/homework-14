@@ -1,11 +1,29 @@
 ﻿Homework -14 
 
 
-
-
+Config>middleware>isAuthenticated.js-if user login,continue to next(), else return to login page.
 Config>config.json - save mysql database connection for different databases.
 Config>passport.js - require: passport, passport-local, 
                                 Link models through var db.
-                                Log-in using email, check for existing email, check for valid password.
+                                Log-in using email, check for existing email, check for valid password using 
+                                 passport middleware local strategy.
+                                 Passport will serialize and deserialize user instance to and from the                  
+                                 session
+.
 Models>index.js - 
-Models>user.js -
+Models>user.js - 
+
+
+Routes>api-routes.js- Route post for user credential , route post username and hash password.
+                                 - Route get logout and user data.
+Routes>html-routes.js- Route to member page if user exists , else to sign-up page.
+                                    - Connect authenticate
+
+
+
+
+Server.js - Starting app  javascript from command : node server.js
+                 Setup necessary  npm 
+                 Require /config/passport, /models
+                 Connect middle that is no longer included in express core.
+                 Require routes: api-routes.js , html-routes.js
