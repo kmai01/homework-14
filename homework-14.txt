@@ -7,11 +7,17 @@ Config>passport.js - require: passport, passport-local,
                                 Link models through var db.
                                 Log-in using email, check for existing email, check for valid password using 
                                  passport middleware local strategy.
-                                 Passport will serialize and deserialize user instance to and from the                  
+                                 Passport serialize and deserialize user instance to and from the                  
                                  session
 .
-Models>index.js - 
-Models>user.js - 
+Models>index.js - generated with the sequelize CLI and collects all the models from the     
+                          models directory and associates them if needed.
+Models>user.js - Requiring bcrypt for password hashing.Model User table with datatype for 
+                           email and password. Hash password with bcrypt.
+
+
+
+
 
 
 Routes>api-routes.js- Route post for user credential , route post username and hash password.
